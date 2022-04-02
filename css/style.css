@@ -67,8 +67,41 @@ section {
 footer {
     padding-top: 15px;
     margin-top: 40px;
-    margin-bottom: 40px;
-    border-top: 1px solid #f5eded;
+    background-color: #212529;
+    color: white;
+}
+
+.brand-column {
+    padding-top: 35px;
+    padding-left: 35px;
+}
+
+.brand {
+    color: white;
+    text-decoration: none;
+}
+
+.articles-column {
+    margin: 0;
+    padding-right: 35px;
+    padding-top: 5px;
+}
+
+.footer-links {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    border-top: 1px solid #585858;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 14px;
+    color: #c3c3c3;
+}
+
+h5 {
+    text-align: center;
 }
 
 
