@@ -17,35 +17,58 @@
 
 <body>
     <!-- Header -->
-    <header class="p-3 bg-dark text-white">
-        <div class="container">
-            <div class="left-header">
-                <img alt="Coat of arms of Edinburgh" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arms_of_Edinburgh.png/91px-Arms_of_Edinburgh.png" width="91" height="100">
-                <h1 id="title" class="header-h1">Edinburgh</h1>
+    <header class="bg-dark text-white">
+        <!-- Main navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Brand-->
+                <a class="navbar-brand" href="#">
+                    <img alt="Coat of arms of Edinburgh Logo" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arms_of_Edinburgh.png/91px-Arms_of_Edinburgh.png" width="91" height="100"> Edinburgh
+                </a>
+                <!-- Bootstrap button for smaller screens-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navigation list -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Link to summary -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#summary">SUMMARY</a>
+                        </li>
+                        <!-- Link to Demography with dropdown options -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">DEMOGRAPHY</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#demography-current">CURRENT</a></li>
+                                <li><a class="dropdown-item" href="#demography-historical">HISTORICAL</a></li>
+                            </ul>
+                        </li>
+                        <!-- Link to Economy -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#economy">ECONOMY</a>
+                        </li>
+                        <!-- Link to Governance with dropdown options -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">GOVERNANCE</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#governance-local">LOCAL GOVERNMENT</a></li>
+                                <li><a class="dropdown-item" href="#governance-scottish-parliament">SCOTTISH PARLIAMENT</a></li>
+                                <li><a class="dropdown-item" href="#governance-uk-parliament">UK PARLIAMENT</a></li>
+                            </ul>
+                        </li>
+                        <!-- Link to SEE ALSO -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#seeAlso">SEE ALSO</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-            <div class="right-header">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="collapse navbar-collapse navbar-dark">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#summary"> Summary</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#demography"> Demography</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#economy"> Economy</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#governance"> Governance</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#seeAlso"> See Also</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+        </nav>
+
+        <div class="main-image">
+            <h1 id="title" class="container padding-top-30">Edinburgh <br/>The Capital of Scotland</h1>
         </div>
     </header>
     <!-- Main -->
@@ -70,7 +93,7 @@
         <!-- Second section - Demography-->
         <section id="demography">
             <h2>Demography</h2>
-            <article>
+            <article id="demography-current">
                 <h3>Current</h3>
                 <p>The most recent official population estimates are 512,150 (2016) for the Edinburgh settlement (includes Musselburgh)[122] and 518,500 (2018) for the local authority area.[2]</p>
                 <p>Edinburgh has a high proportion of young adults, with 19.5% of the population in their 20s (exceeded only by Aberdeen) and 15.2% in their 30s which is the highest in Scotland. The proportion of Edinburgh's population born in the UK fell
@@ -250,7 +273,7 @@
 
                 </table>
             </article>
-            <article>
+            <article id="demography-historical">
                 <h3>Historical</h3>
                 <p>A census by the Edinburgh presbytery in 1592 recorded a population of 8,003 adults spread equally north and south of the High Street which runs along the spine of the ridge sloping down from the Castle.[127] In the 18th and 19th centuries,
                     the population expanded rapidly, rising from 49,000 in 1751 to 136,000 in 1831, primarily due to migration from rural areas.[93]: 9  As the population grew, problems of overcrowding in the Old Town, particularly in the cramped tenements
@@ -306,7 +329,7 @@
         <!-- Forth section - Governance-->
         <section id="governance">
             <h2>Governance</h2>
-            <article>
+            <article id="governance-local">
                 <h3>Local government</h3>
                 <p>Following local government reorganisation in 1996, the City of Edinburgh Council constitutes one of the 32 council areas of Scotland.[207] Like all other local authorities of Scotland, the council has powers over most matters of local
                     administration such as housing, planning, local transport, parks, economic development and regeneration.[208] The council comprises 58 elected councillors, returned from 17 multi-member electoral wards in the city.[209] Following the
@@ -314,7 +337,7 @@
                     coalition. The 2017 City of Edinburgh Council election, saw a continuation of this administration, but with the SNP as the largest party.</p>
                 <p>The city's coat of arms was registered by the Lord Lyon King of Arms in 1732.[211]</p>
             </article>
-            <article>
+            <article id="governance-scottish-parliament">
                 <h3>Scottish Parliament</h3>
                 <figure>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/The_main_chamber%2C_the_Scottish_Parliament_-_geograph.org.uk_-_400523.jpg" style="width:50%; height:auto" alt="Scottish Parliament">
@@ -332,7 +355,7 @@
                 <p>In addition, the city is also represented by seven regional MSPs representing the Lothian electoral region: The Conservatives have three regional MSPs: Jeremy Balfour, Miles Briggs and Gordon Lindhurst, Labour have two regional MSPs: Sarah
                     Boyack and Neil Findlay, Scottish Greens have one regional MSP: Alison Johnstone and there is one independent MSP: Andy Wightman (elected as a Scottish Green).</p>
             </article>
-            <article>
+            <article id="governance-uk-parliament">
                 <h3>UK Parliament</h3>
                 <p>Edinburgh is also represented in the House of Commons of the United Kingdom by five Members of Parliament. The city is divided into Edinburgh North and Leith, Edinburgh East, Edinburgh South, Edinburgh South West, and Edinburgh West,[213]
                     each constituency electing one member by the first past the post system. Edinburgh is represented by three MPs affiliated with the Scottish National Party, one Liberal Democrat MP in Edinburgh West and one Labour MP in Edinburgh South.</p>
